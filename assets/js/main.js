@@ -96,7 +96,9 @@ function renderCategories() {
             window.location.href = `category.html?id=${cat.id}`;
         };
         catCard.innerHTML = `
-            <i class="${cat.icon}"></i>
+            <div class="category-icon-wrapper">
+                <i class="${cat.icon}"></i>
+            </div>
             <h3>${cat.name}</h3>
             <p>${cat.description}</p>
         `;

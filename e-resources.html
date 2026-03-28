@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Resources | Digital Library</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Logo">
+                <span>DIGITAL LIB</span>
+            </a>
+            <button class="nav-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="e-resources.html" class="active">E-Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="category-hero">
+        <div class="container">
+            <h1>Best Educational Platforms</h1>
+            <p>Curated e-resources to help you learn and grow endlessly.</p>
+            <div class="category-search">
+                <input type="text" id="resource-search" placeholder="Search platforms (e.g., Coursera, NCERT)...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Govt Websites Grid -->
+    <section class="categories-display" style="padding-top: 20px; padding-bottom: 40px;">
+        <div class="container">
+            <h2 style="margin-bottom: 30px; text-align: center; color: var(--primary-dark);">Government Educational Websites</h2>
+            <div class="categories-grid">
+                
+                <div class="category-card" onclick="window.open('https://www.edudel.nic.in/', '_blank')">
+                    <div class="category-icon-wrapper">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3>Edudel</h3>
+                    <p>Delhi Directorate of Education official portal and resources.</p>
+                </div>
+
+                <div class="category-card" onclick="window.open('https://ndl.iitkgp.ac.in/', '_blank')">
+                    <div class="category-icon-wrapper">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <h3>National Digital Library</h3>
+                    <p>A virtual repository of learning resources with a single-window search.</p>
+                </div>
+
+                <div class="category-card" onclick="window.open('https://swayam.gov.in/', '_blank')">
+                    <div class="category-icon-wrapper">
+                        <i class="fas fa-laptop-house"></i>
+                    </div>
+                    <h3>SWAYAM</h3>
+                    <p>Free online education programme initiated by Government of India.</p>
+                </div>
+
+                <div class="category-card" onclick="window.open('https://epathshala.nic.in/', '_blank')">
+                    <div class="category-icon-wrapper">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>E-Pathshala</h3>
+                    <p>Educational resources by NCERT including e-books, audio, and video.</p>
+                </div>
+
+                <div class="category-card" onclick="window.open('https://www.cbse.gov.in/', '_blank')">
+                    <div class="category-icon-wrapper">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>CBSE</h3>
+                    <p>Central Board of Secondary Education official resources.</p>
+                </div>
+
+                <div class="category-card" onclick="window.open('https://ncert.nic.in/', '_blank')">
+                    <div class="category-icon-wrapper">
+                        <i class="fas fa-bookmark"></i>
+                    </div>
+                    <h3>NCERT</h3>
+                    <p>National Council of Educational Research and Training textbooks.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Private Websites Grid -->
+    <section class="categories-display" style="padding-top: 20px; padding-bottom: 80px;">
+        <div class="container">
+            <h2 style="margin-bottom: 30px; text-align: center; color: var(--primary-dark);">Private & Institutional Platforms</h2>
+            <div class="categories-grid">
+
+                <div class="category-card" onclick="window.open('https://www.khanacademy.org', '_blank')">
+                    <div class="category-icon-wrapper">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Khan Academy</h3>
+                    <p>Free, world-class education for anyone, anywhere.</p>
+                </div>
+                
+                <div class="category-card" onclick="window.open('https://www.coursera.org', '_blank')">
+                    <div class="category-icon-wrapper">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Coursera</h3>
+                    <p>Build skills with courses, certificates, and degrees online.</p>
+                </div>
+                
+                <div class="category-card" onclick="window.open('https://www.edx.org', '_blank')">
+                    <div class="category-icon-wrapper">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h3>edX</h3>
+                    <p>Access 2000 free online courses from 140 leading institutions.</p>
+                </div>
+                
+                <div class="category-card" onclick="window.open('https://ocw.mit.edu', '_blank')">
+                    <div class="category-icon-wrapper">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>MIT OpenCourseWare</h3>
+                    <p>Web-based publication of virtually all MIT course content.</p>
+                </div>
+                
+                <div class="category-card" onclick="window.open('https://www.freecodecamp.org', '_blank')">
+                    <div class="category-icon-wrapper">
+                        <i class="fab fa-free-code-camp"></i>
+                    </div>
+                    <h3>freeCodeCamp</h3>
+                    <p>Learn to code for free. Build projects. Earn certifications.</p>
+                </div>
+
+                <div class="category-card" onclick="window.open('https://www.ted.com', '_blank')">
+                    <div class="category-icon-wrapper">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>TED Talks</h3>
+                    <p>Influential videos from expert speakers on education and tech.</p>
+                </div>
+                
+                <div class="category-card" onclick="window.open('https://www.biodigital.com/', '_blank')">
+                    <div class="category-icon-wrapper">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3>HumanBioDigital</h3>
+                    <p>Interactive 3D anatomy and disease platform for visual learning.</p>
+                </div>
+
+                <div class="category-card" onclick="window.open('https://www.oldmapsonline.org/', '_blank')">
+                    <div class="category-icon-wrapper">
+                        <i class="fas fa-map"></i>
+                    </div>
+                    <h3>OldMapHistory</h3>
+                    <p>Discover historical maps of the world from private collections.</p>
+                </div>
+
+                <div class="category-card" onclick="window.open('https://archive.org/', '_blank')">
+                    <div class="category-icon-wrapper">
+                        <i class="fas fa-archive"></i>
+                    </div>
+                    <h3>Internet Archive</h3>
+                    <p>Non-profit library of millions of free books, movies, software.</p>
+                </div>
+
+                <div class="category-card" onclick="window.open('https://manybooks.net/', '_blank')">
+                    <div class="category-icon-wrapper">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3>Many Books</h3>
+                    <p>Massive collection of free e-books across many genres.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="logo footer-logo">
+                        <img src="assets/images/logo.png" alt="Logo">
+                        <span>DIGITAL LIB</span>
+                    </div>
+                    <p>Elevating education through limitless digital resources.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="categories.html">Library</a></li>
+                        <li><a href="e-resources.html">E-Resources</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@digitallib.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Education Lane, Digital City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Digital Library. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const searchInput = document.getElementById('resource-search');
+            const cards = document.querySelectorAll('.category-card');
+
+            if (searchInput) {
+                searchInput.addEventListener('input', (e) => {
+                    const query = e.target.value.toLowerCase();
+                    cards.forEach(card => {
+                        const title = card.querySelector('h3').innerText.toLowerCase();
+                        const desc = card.querySelector('p').innerText.toLowerCase();
+                        if (title.includes(query) || desc.includes(query)) {
+                            card.style.display = ''; // Reset to original display
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>

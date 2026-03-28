@@ -22,6 +22,7 @@
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="categories.html" class="active">Categories</a></li>
+                <li><a href="e-resources.html">E-Resources</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -71,7 +72,9 @@
                     card.className = 'category-card';
                     card.onclick = () => { window.location.href = `category.html?id=${cat.id}`; };
                     card.innerHTML = `
-                        <i class="${cat.icon}"></i>
+                        <div class="category-icon-wrapper">
+                            <i class="${cat.icon}"></i>
+                        </div>
                         <h3>${cat.name}</h3>
                         <p>${cat.description}</p>
                     `;
