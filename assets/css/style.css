@@ -1,13 +1,15 @@
 /* Design System & Variables */
 :root {
-    --primary: #0066cc;
-    --primary-dark: #004d99;
-    --secondary: #6c757d;
-    --accent: #00d2ff;
-    --bg-light: #f8f9fa;
+    --primary: #8b5cf6; /* Vibrant Purple */
+    --primary-dark: #6d28d9;
+    --primary-light: rgba(139, 92, 246, 0.1);
+    --secondary: #ec4899; /* Vibrant Pink */
+    --accent: #06b6d4; /* Vibrant Cyan */
+    --bg-light: #f8fafc; /* Cooler, lighter base */
     --bg-white: #ffffff;
-    --text-main: #212529;
-    --text-muted: #6c7279;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --gradient-brand: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
     --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -117,7 +119,7 @@ button {
     left: 0;
     width: 0;
     height: 2px;
-    background: var(--primary);
+    background: var(--gradient-brand);
     transition: var(--transition);
 }
 
@@ -235,7 +237,7 @@ button {
     right: 8px;
     top: 50%;
     transform: translateY(-50%);
-    background: var(--primary);
+    background: var(--gradient-brand);
     color: white;
     width: 44px;
     height: 44px;
@@ -427,7 +429,7 @@ section {
     right: -50px;
     width: 150px;
     height: 150px;
-    background: var(--primary);
+    background: var(--gradient-brand);
     opacity: 0.05;
     border-radius: 50%;
     transition: var(--transition);
@@ -449,7 +451,7 @@ section {
 .category-icon-wrapper {
     width: 80px;
     height: 80px;
-    background: rgba(0, 102, 204, 0.1);
+    background: var(--primary-light);
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -461,7 +463,7 @@ section {
 }
 
 .category-card:hover .category-icon-wrapper {
-    background: var(--primary);
+    background: var(--gradient-brand);
     transform: rotate(10deg);
 }
 
@@ -628,7 +630,7 @@ footer {
 }
 
 .view-btn {
-    background: var(--primary);
+    background: var(--gradient-brand);
     color: white;
     padding: 8px 15px;
     border-radius: 5px;
@@ -720,7 +722,7 @@ footer {
 .badge {
     display: inline-block;
     padding: 5px 15px;
-    background: #e7f1ff;
+    background: var(--primary-light);
     color: var(--primary);
     border-radius: 20px;
     font-size: 0.8rem;
@@ -739,7 +741,7 @@ footer {
 }
 
 .btn-primary {
-    background: var(--primary);
+    background: var(--gradient-brand);
     color: white;
     padding: 15px 30px;
     border-radius: 10px;
