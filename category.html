@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category | Digital Library</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Logo">
+                <span>DIGITAL LIB</span>
+            </a>
+            <button class="nav-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Category Header -->
+    <section class="category-hero">
+        <div class="container">
+            <h1 id="category-title">All Books</h1>
+            <p id="category-desc">Explore our wide range of digital resources.</p>
+            <div class="category-search">
+                <input type="text" id="inner-search" placeholder="Search within this category...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Grid -->
+    <section class="books-display">
+        <div class="container">
+            <div id="books-grid" class="books-grid">
+                <!-- Books will be injected here -->
+            </div>
+            <div id="no-results" class="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No books found</h3>
+                <p>Try adjusting your search query.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Reader Modal -->
+    <div id="reader-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="book-preview-large">
+                    <img id="modal-img" src="" alt="Book Cover">
+                </div>
+                <div class="book-details-large">
+                    <h2 id="modal-title">Book Title</h2>
+                    <p id="modal-author">Author Name</p>
+                    <div class="badge" id="modal-cat">Category</div>
+                    <div class="book-description">
+                        <p>This is a digital preview of the book. As a member of Digital Library, you have full access to read this entire volume online or download it for offline use.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="modal-actions">
+                        <button class="btn-primary"><i class="fas fa-book-open"></i> Start Reading</button>
+                        <button class="btn-outline"><i class="fas fa-download"></i> Download PDF</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 Digital Library. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/category.js"></script>
+</body>
+</html>

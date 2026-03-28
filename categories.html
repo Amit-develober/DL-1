@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories | Digital Library</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Logo">
+                <span>DIGITAL LIB</span>
+            </a>
+            <button class="nav-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html" class="active">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Categories Header -->
+    <section class="category-hero">
+        <div class="container">
+            <h1>Explore Categories</h1>
+            <p>From Science to Literature, find your perfect read.</p>
+            <div class="category-search">
+                <input type="text" id="cat-search" placeholder="Search categories (e.g., Science, Tech)...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Grid -->
+    <section class="categories-display">
+        <div class="container">
+            <div id="all-categories-grid" class="categories-grid">
+                <!-- Categories will be injected here -->
+            </div>
+        </div>
+    </section>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Digital Library. All rights reserved.</p>
+                </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/data.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const grid = document.getElementById('all-categories-grid');
+            
+            function renderCats(filter = '') {
+                grid.innerHTML = '';
+                const filtered = libraryData.categories.filter(c => 
+                    c.name.toLowerCase().includes(filter.toLowerCase()) ||
+                    c.description.toLowerCase().includes(filter.toLowerCase())
+                );
+
+                filtered.forEach(cat => {
+                    const card = document.createElement('div');
+                    card.className = 'category-card';
+                    card.onclick = () => { window.location.href = `category.html?id=${cat.id}`; };
+                    card.innerHTML = `
+                        <i class="${cat.icon}"></i>
+                        <h3>${cat.name}</h3>
+                        <p>${cat.description}</p>
+                    `;
+                    grid.appendChild(card);
+                });
+            }
+
+            renderCats();
+
+            // Search logic
+            const searchInput = document.getElementById('cat-search');
+            searchInput.addEventListener('input', (e) => {
+                renderCats(e.target.value);
+            });
+
+            // Mobile Menu Logic for this page
+            const toggle = document.querySelector('.nav-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            toggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                const icon = toggle.querySelector('i');
+                if (navLinks.classList.contains('active')) {
+                    icon.classList.replace('fa-bars', 'fa-times');
+                } else {
+                    icon.classList.replace('fa-times', 'fa-bars');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

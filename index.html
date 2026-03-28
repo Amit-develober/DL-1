@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Library | Explore Knowledge Without Limits</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo.png" alt="Logo">
+                <span>DIGITAL LIB</span>
+            </a>
+            <button class="nav-toggle"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider-bg">
+            <!-- Background images will be injected by main.js -->
+        </div>
+        <div class="container hero-content slide-up">
+            <h1>Explore Knowledge <br>Without Limits</h1>
+            <p>Your gateway to thousands of digital books, academic resources, and literature.</p>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search by book title or author...">
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Books Section -->
+    <section class="trending reveal">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trending Books</h2>
+                <p>Most read books this month</p>
+            </div>
+            <div class="trending-grid">
+                <div class="slider-container">
+                    <!-- 3 Books will be injected by main.js -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements reveal">
+        <div class="container">
+            <div class="stats-grid">
+                <!-- Stats will be injected by main.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Reader Modal -->
+    <div id="reader-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="book-preview-large">
+                    <img id="modal-img" src="" alt="Book Cover">
+                </div>
+                <div class="book-details-large">
+                    <h2 id="modal-title">Book Title</h2>
+                    <p id="modal-author">Author Name</p>
+                    <div class="badge" id="modal-cat">Category</div>
+                    <div class="book-description">
+                        <p>This is a digital preview of the book. As a member of Digital Library, you have full access to read this entire volume online or download it for offline use.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="modal-actions">
+                        <button class="btn-primary"><i class="fas fa-book-open"></i> Start Reading</button>
+                        <button class="btn-outline"><i class="fas fa-download"></i> Download PDF</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="logo footer-logo">
+                        <img src="assets/images/logo.png" alt="Logo">
+                        <span>DIGITAL LIB</span>
+                    </div>
+                    <p>Elevating education through limitless digital resources.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#categories">Library</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@digitallib.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (234) 567-890</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Education Lane, Digital City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Digital Library. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
